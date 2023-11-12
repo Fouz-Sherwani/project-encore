@@ -1,0 +1,61 @@
+
+.navegation {
+display: flex;
+justify-content: space-between;
+width: 90%;
+}
+
+.navlink {
+margin-left: 30%;
+}
+
+
+ul {
+    display: flex;
+    list-style: none; 
+    justify-content: space-between;
+}
+li {
+padding: 10px;
+}
+
+.header {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.heading {
+    margin-top: 10%;
+    width: 75%;
+}
+
+body {
+    font-family:  Arial;
+    background-image:  url('images/high-resolution-blue-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    h1 {
+        color: white;
+    }
+    p {
+        color: white;
+        width: 65%;
+        text-align: center;
+    }
+    a  {
+        color: white;
+        text-decoration: none;
+    }
+    button  {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 3px;
+        width: 150px;
+        height: 50px;
+        font-size: medium;
+    }
