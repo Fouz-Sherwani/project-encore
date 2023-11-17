@@ -1,30 +1,43 @@
-
-.navegation {
-display: flex;
-justify-content: space-between;
-width: 90%;
-}
-
-.navlink {
-margin-left: 30%;
-}
-
-
-ul {
-    display: flex;
-    list-style: none; 
-    justify-content: space-between;
-}
-li {
-padding: 10px;
-}
-
 .header {
     display: flex; 
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+
 }
+
+/* .navegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    } */
+
+    .navegation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+      }
+      
+      .flex-item {
+        flex-basis: 33.33%;
+        margin: 0 10px;
+      }
+      
+      .flex-item:last-child {
+        flex-basis: 100%;
+        margin: 0;
+        justify-content: flex-start;
+      }
+
+
+
+
 
 .heading {
     margin-top: 10%;
@@ -46,10 +59,7 @@ body {
         width: 65%;
         text-align: center;
     }
-    a  {
-        color: white;
-        text-decoration: none;
-    }
+
     button  {
         background-color: transparent;
         color: white;
@@ -58,4 +68,69 @@ body {
         width: 150px;
         height: 50px;
         font-size: medium;
+    }
+
+    .humburg  {
+        width: 32px;
+        height: 32px;
+        align-items: left;
+
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none; 
+        align-items: flex-start;
+    }
+    li {
+    padding: 10px;
+    width: 90%;       
+    }
+
+    li a {
+        color: white;
+        padding: 4px 6px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-align: left;
+    }
+
+        .flex-item li a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    @media only screen and (min-width: 431px) {
+
+        .humburg {
+            display: none;
+        }
+        
+
+            
+            .navlink {
+            display: flex;
+            margin-left: 30%;
+            }
+            
+            
+            ul {
+                display: flex;
+                list-style: none; 
+                justify-content: space-between;
+            }
+            li {
+            padding: 10px;
+            }
+            
+            a  {
+                color: white;
+                text-decoration: none;
+            }
     }
